@@ -1,0 +1,32 @@
+aula 10:
+
+Processo de renderização da página (npm run dev)
+- Busca file index.html , tag script carrega src="/src/main.tsx"
+
+- createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+) -> Busca por um elemento com id = root , .render -> renderização do primeiro
+componente da página. 
+
+- Em index.html temos uma div com id=root: <div id="root"></div>, e as 
+tags strictMode verifica, rodando o código até em duas vezes para garantir
+que a aplicação funcione perfeitamente (se quier remover pode dixr apenas a tag App)
+
+Resumo: 
+
+1. index.html através da div id=root -> injeta a informação da página.
+tag script -> busca em src = "src/main.tsx" 
+
+2. main.tsx -> reenderiza através de getElementById 'root' o componente App. 
+O que é um componente react ? -> Basico: Uma função que retorna .jsx 
+
+3. App.tsx -> Componente / "função" App é exportada, e obtida por getElementById...
+
+O que é jsx ? Resumo, como um html com super poderes, permitindo criar elementos
+.jsx que se tornam componentes do react 
+
+Portanto em App.tsx a função que exportamos App esta retornando o retorna o 
+componente jsx
+
