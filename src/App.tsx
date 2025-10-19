@@ -1,10 +1,9 @@
-import './styles/theme.css';
-import './styles/global.css';
 import { Heading } from './components/Heading';
 
-export function App() {
-  console.log('Oi');
+import './styles/theme.css';
+import './styles/global.css';
 
+export function App() {
   return (
     <>
       <Heading attr={123} attr2='String'>
