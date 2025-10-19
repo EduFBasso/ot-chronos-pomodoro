@@ -4,5 +4,9 @@ body {
 }
 
 h1 {
-  color: var(--color-primary);
+  color: var(--color-purple);
+}
+
+.heading {
+  background-color: var(--color-brown-light);
 }
